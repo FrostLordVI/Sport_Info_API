@@ -1,0 +1,179 @@
+
+
+.teamsBoard{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 10px;
+    width: auto;
+
+    img{
+        height: 70px;
+        padding-top: 15px;
+    }
+}
+
+.teamBoard{
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+   
+
+     p{ 
+        opacity: 0;
+    }
+     img{
+        opacity:0;
+    }       
+   
+    .rank{
+        width: 200px;
+        height: 50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(3px);
+        padding: 0px;
+        font-size: 30px;
+        font-weight: 900;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1.5px;
+        clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+
+    .points{
+        width: 200px;
+        height: 50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(3px);
+        padding: 0px;
+        font-size: 30px;
+        font-weight: 900;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1.5px; 
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        margin-left: -40px; 
+    }
+
+    .logoName{
+        width: 400px;
+        height: 120px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(3px);
+        margin-left: -70px;
+        margin-right: -30px;
+        font-size: 20px;
+        font-weight: 900;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1.2px;
+        clip-path: polygon(29% 0%, 100% 0%, 71% 100%, 0% 100%);
+        
+
+        p{
+            margin-top: 0px;
+            font-size: 18px;
+        }
+    }
+}
+
+
+.teamBoard {
+    .fade-out{  
+        animation: fadeOut 3.5s ease-in-out;
+        opacity: 0;
+    }
+}
+
+.teamBoard {
+    .fade-in{
+        
+        animation: fadeIn 3.5s ease-in-out;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity:0
+    }
+    90%{
+        opacity: 0;
+    }
+    91%{
+        opacity:.1
+    }
+    92%{
+        opacity:.2
+    }
+    93%{
+        opacity:.3
+    }
+    94%{
+        opacity:.4
+    }
+    95%{
+        opacity:.5
+    }
+    96%{
+        opacity:.6
+    }
+    97%{
+        opacity:.7
+    }
+    98%{
+        opacity:.8
+    }
+    99%{
+        opacity:.9
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity:1
+    }
+    1%{
+        opacity: .9;
+    }
+    2%{
+        opacity:.8
+    }
+    3%{
+        opacity:.7
+    }
+    4%{
+        opacity:.6
+    }
+    5%{
+        opacity:.5
+    }
+    6%{
+        opacity:.4
+    }
+    7%{
+        opacity:.3
+    }
+    8%{
+        opacity:.2
+    }
+    9%{
+        opacity:.1
+    }
+    10%{
+        opacity:0
+    }
+    100%{
+        opacity: 0;
+    }
+}

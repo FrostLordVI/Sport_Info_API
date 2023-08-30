@@ -1,0 +1,136 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 40px;
+    color: white;
+}
+
+button{
+    width: 210px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(3px);
+    padding: 0px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 900;
+    color:  rgb(255, 255, 255);
+    clip-path: polygon(0 0, 76% 0, 100% 100%, 24% 100%);  
+    margin: 5px; 
+    transition: .2s transform ease-out;  
+}
+
+button:hover{
+    color: rgb(0, 6, 92);
+}
+
+
+button::after{
+    background-color: rgb(255, 255, 255);
+    content: '';
+    display :block;
+    height :100%;
+    width: 100%;
+    position: absolute;
+    left :0;
+    top :0;
+    transform: translate(0,-102%);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}   
+  button:hover::after{
+    transform: translate(0, 0);
+  }
+
+  button.chosen{
+     color: rgb(0, 6, 92);
+     transition: .2s transform ease-out;
+  }
+
+  button.chosen::after{
+    transform: translate(0, 0);
+    transition: .2s transform ease-out; 
+  }
+ 
+.seasonsUp{
+    display: flex;
+
+    button{
+        margin-left: -50px;
+    }
+   .seasonUp-firstBtn{
+        margin-left: -50px;
+    }
+}
+
+.asideSeason{   
+    transition: all .5s ease-in;
+    display: flex;
+    margin-left: 108px;
+    margin-top:-57px;
+
+    .seasons{
+        display: flex;
+        flex-direction: row;   
+    }
+}
+
+.asideCountries{
+    transition: all .5s ease-in;
+    display: flex;
+
+    div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .countries{
+        display: flex;
+        flex-direction: column;
+        margin-left: -1px;
+        
+        div button{
+            margin-left: -50px;
+        }
+       
+        .countriesUp{
+            margin-bottom: -7px;
+        }
+        .countriesUp-firstBtn{
+            margin-left:-103px;
+        }
+    }
+
+}
+
+
+
+.seasonLabel,.countriesLabel{
+    margin: 5px;
+    width: 210px;
+    height: 210px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(3px);
+    font-size: 20px;
+    font-weight: 900;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.seasonLabel{
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+}
+
+
