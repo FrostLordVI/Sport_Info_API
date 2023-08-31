@@ -1,4 +1,4 @@
-Football Standings Web App LIVE SITE - https://preeminent-granita-480b64.netlify.app/
+Football Standings Web App LIVE SITE - https://lighthearted-rabanadas-673e5f.netlify.app/
 
 Demo
 
